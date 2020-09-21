@@ -11,7 +11,7 @@ namespace EmployeesApp.Models
         public string Surname { get; set; }
         [RegularExpression(@"^([+]?[0-9\s-\(\)]{3,25})+$")]
         public string Phone { get; set; }
-        public int CompanyId { get; set; } //didn't make it into entity since app has no "add company" requirement
+        public int CompanyId { get; set; }
 
         public virtual Passport Passport { get; set; } = new Passport();
     }
